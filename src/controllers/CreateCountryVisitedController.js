@@ -15,7 +15,10 @@ export class CreateCountryVisitedController {
             const db = await openDb();
             db.run('INSERT INTO countries_visited (notes, ccn3) VALUES (?, ?)', [notes, ccn3]);
             
-            res.json("Country visited added successfully");
+            res.json({
+                status: 200,
+                message: "Country registered successfully"
+            });
         } catch (error) {4
             res.status(500).json({
                 message: "Internal server error",

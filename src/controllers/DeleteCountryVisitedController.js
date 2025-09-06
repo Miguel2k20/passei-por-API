@@ -7,8 +7,11 @@ export class DeleteCountryVisitedController {
 
             const db = await openDb();
             db.run('DELETE FROM countries_visited WHERE id = ?', [id]);
-            
-            res.json("Country visited deleted successfully");
+
+            res.json({
+                status: 200,
+                message: "Country deleted successfully"
+            });
         } catch (error) {4
             res.status(500).json({
                 message: "Internal server error",

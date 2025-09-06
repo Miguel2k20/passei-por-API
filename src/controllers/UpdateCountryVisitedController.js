@@ -16,7 +16,10 @@ export class UpdateCountryVisitedController {
             const db = await openDb();
             db.run('UPDATE countries_visited SET notes = ? WHERE id = ?', [notes, id]);
             
-            res.json("Country visited updated successfully");
+            res.json({
+                status: 200,
+                message: "Country updated successfully"
+            });
         } catch (error) {4
             res.status(500).json({
                 message: "Internal server error",
