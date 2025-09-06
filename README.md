@@ -13,7 +13,6 @@ O PasseiPor utiliza uma **API de países** para fornecer informações sobre cad
 * **API Terceirizada**: [`https://api.passeipor.com`](https://api.passeipor.com)
 * **API Local (Projeto)**: [`http://localhost:3000`](http://localhost:3000)
 
-
 ---
 
 ## Endpoints da API
@@ -144,9 +143,27 @@ O PasseiPor utiliza **SQLite** e possui uma estrutura simples com uma tabela pri
 
 ---
 
+## Como Rodar o Projeto
+
+1. Certifique-se de estar usando **Node.js v22.16.0**.
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Inicie o servidor:
+
+```bash
+npm run dev
+```
+
+> O servidor estará disponível em `http://localhost:3000`.
+
+---
+
 ## Observações
 
 * Use `GET /country` para obter informações completas sobre qualquer país antes de registrar ou atualizar dados.
 * Sempre valide os dados no frontend antes de enviar para a API.
 * O banco de dados é local (`database.db`) e **não deve ser versionado** no repositório.
-* Para rodar a aplicação, instale as dependências com `npm install` e inicie o servidor com `npm run dev`.
