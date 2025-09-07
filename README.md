@@ -22,7 +22,38 @@ O **PasseiPor** é um projeto onde a pessoa registra viagens como uma **recorda�
 **Resposta:** 200 OK
 
 ```json
-[ ... ]
+[
+  {
+    "flags": {
+      "png": "https://flagcdn.com/w320/br.png",
+      "svg": "https://flagcdn.com/br.svg",
+      "alt": "The flag of Brazil has a green field with a large yellow rhombus in the center. Within the rhombus is a dark blue globe with twenty-seven small five-pointed white stars depicting a starry sky and a thin white convex horizontal band inscribed with the national motto 'Ordem e Progresso' across its center."
+    },
+    "name": {
+      "common": "Brazil",
+      "official": "Federative Republic of Brazil",
+      "nativeName": {
+        "por": {
+          "official": "República Federativa do Brasil",
+          "common": "Brasil"
+        }
+      }
+    },
+    "ccn3": "076",
+    "currencies": {
+      "BRL": {"name": "Brazilian real", "symbol": "R$"}
+    },
+    "capital": ["Brasília"],
+    "region": "Americas",
+    "subregion": "South America",
+    "languages": {"por": "Portuguese"},
+    "maps": {
+      "googleMaps": "https://goo.gl/maps/waCKk21HeeqFzkNC9",
+      "openStreetMaps": "https://www.openstreetmap.org/relation/59470"
+    },
+    "population": 212559409
+  }
+]
 ```
 
 ---
@@ -97,10 +128,29 @@ O **PasseiPor** é um projeto onde a pessoa registra viagens como uma **recorda�
 
 ```json
 {
-  "id": "423",
+  "id": 423,
   "ccn3": "045",
   "notes": "Lorem ipsum",
-  "country-info": { ... }
+  "country-info": {
+    "flags": {
+      "png": "https://flagcdn.com/w320/br.png",
+      "svg": "https://flagcdn.com/br.svg",
+      "alt": "The flag of Brazil has a green field with a large yellow rhombus in the center. Within the rhombus is a dark blue globe with twenty-seven small five-pointed white stars depicting a starry sky and a thin white convex horizontal band inscribed with the national motto 'Ordem e Progresso' across its center."
+    },
+    "name": {
+      "common": "Brazil",
+      "official": "Federative Republic of Brazil",
+      "nativeName": {"por": {"official": "República Federativa do Brasil","common": "Brasil"}}
+    },
+    "ccn3": "076",
+    "currencies": {"BRL": {"name": "Brazilian real", "symbol": "R$"}},
+    "capital": ["Brasília"],
+    "region": "Americas",
+    "subregion": "South America",
+    "languages": {"por": "Portuguese"},
+    "maps": {"googleMaps": "https://goo.gl/maps/waCKk21HeeqFzkNC9", "openStreetMaps": "https://www.openstreetmap.org/relation/59470"},
+    "population": 212559409
+  }
 }
 ```
 
@@ -116,150 +166,31 @@ O **PasseiPor** é um projeto onde a pessoa registra viagens como uma **recorda�
 [
   {
     "flags": {
-        "png": "https://flagcdn.com/w320/jm.png",
-        "svg": "https://flagcdn.com/jm.svg",
-        "alt": "The flag of Jamaica is divided by a gold diagonal cross into four alternating triangular areas of green at the top and bottom, and black on the hoist and fly sides"
+      "png": "https://flagcdn.com/w320/jm.png",
+      "svg": "https://flagcdn.com/jm.svg",
+      "alt": "The flag of Jamaica is divided by a gold diagonal cross into four alternating triangular areas of green at the top and bottom, and black on the hoist and fly sides"
     },
     "name": {
-        "common": "Jamaica",
-        "official": "Jamaica",
-        "nativeName": {
-            "eng": {
-                "official": "Jamaica",
-                "common": "Jamaica"
-            },
-            "jam": {
-                "official": "Jamaica",
-                "common": "Jamaica"
-            }
-        }
+      "common": "Jamaica",
+      "official": "Jamaica",
+      "nativeName": {
+        "eng": {"official": "Jamaica", "common": "Jamaica"},
+        "jam": {"official": "Jamaica", "common": "Jamaica"}
+      }
     },
     "ccn3": "388",
-    "currencies": {
-        "JMD": {
-            "name": "Jamaican dollar",
-            "symbol": "$"
-        }
-    },
-    "capital": [
-        "Kingston"
-    ],
+    "currencies": {"JMD": {"name": "Jamaican dollar", "symbol": "$"}},
+    "capital": ["Kingston"],
     "region": "Americas",
     "subregion": "Caribbean",
     "translations": {
-        "ara": {
-            "official": "جامايكا",
-            "common": "جامايكا"
-        },
-        "bre": {
-            "official": "Jamaika",
-            "common": "Jamaika"
-        },
-        "ces": {
-            "official": "Jamajka",
-            "common": "Jamajka"
-        },
-        "cym": {
-            "official": "Jamaica",
-            "common": "Jamaica"
-        },
-        "deu": {
-            "official": "Jamaika",
-            "common": "Jamaika"
-        },
-        "est": {
-            "official": "Jamaica",
-            "common": "Jamaica"
-        },
-        "fin": {
-            "official": "Jamaika",
-            "common": "Jamaika"
-        },
-        "fra": {
-            "official": "Jamaïque",
-            "common": "Jamaïque"
-        },
-        "hrv": {
-            "official": "Jamajka",
-            "common": "Jamajka"
-        },
-        "hun": {
-            "official": "Jamaica",
-            "common": "Jamaica"
-        },
-        "ind": {
-            "official": "Jamaika",
-            "common": "Jamaika"
-        },
-        "ita": {
-            "official": "Giamaica",
-            "common": "Giamaica"
-        },
-        "jpn": {
-            "official": "ジャマイカ",
-            "common": "ジャマイカ"
-        },
-        "kor": {
-            "official": "자메이카",
-            "common": "자메이카"
-        },
-        "nld": {
-            "official": "Jamaica",
-            "common": "Jamaica"
-        },
-        "per": {
-            "official": "جامائیکا",
-            "common": "جامائیکا"
-        },
-        "pol": {
-            "official": "Jamajka",
-            "common": "Jamajka"
-        },
-        "por": {
-            "official": "Jamaica",
-            "common": "Jamaica"
-        },
-        "rus": {
-            "official": "Ямайка",
-            "common": "Ямайка"
-        },
-        "slk": {
-            "official": "Jamajka",
-            "common": "Jamajka"
-        },
-        "spa": {
-            "official": "Jamaica",
-            "common": "Jamaica"
-        },
-        "srp": {
-            "official": "Јамајка",
-            "common": "Јамајка"
-        },
-        "swe": {
-            "official": "Jamaica",
-            "common": "Jamaica"
-        },
-        "tur": {
-            "official": "Jamaika",
-            "common": "Jamaika"
-        },
-        "urd": {
-            "official": "جمیکا",
-            "common": "جمیکا"
-        },
-        "zho": {
-            "official": "牙买加",
-            "common": "牙买加"
-        }
+      "por": {"official": "Jamaica", "common": "Jamaica"}
     },
-    "maps": {
-        "googleMaps": "https://goo.gl/maps/Z8mQ6jxnRQKFwJy9A",
-        "openStreetMaps": "https://www.openstreetmap.org/relation/555017"
-    },
+    "maps": {"googleMaps": "https://goo.gl/maps/Z8mQ6jxnRQKFwJy9A", "openStreetMaps": "https://www.openstreetmap.org/relation/555017"},
     "population": 2961161,
     "notes": "teste",
     "visited": true
-  },
+  }
 ]
 ```
 
