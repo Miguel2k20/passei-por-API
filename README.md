@@ -127,6 +127,8 @@ Guia de referência para integração com a API de países usada pelo Passei Por
 
 ```json
 {
+  "id": "423",
+  "ccn3": "045",
   "notes": "Lorem ipsum",
   "country-info": {
     "flags": {
