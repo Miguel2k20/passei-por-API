@@ -8,7 +8,7 @@ export class GetCountryVisited {
             const db = await openDb();
             const client = new RestcountriesClient()
             
-            const country = await db.get('SELECT * FROM countries_visited WHERE id = ?', [id]);
+            const country = await db.get('SELECT * FROM countries_visited WHERE ccn3 = ?', [id]);
 
             if(!country) {
                 return res.status(404).json({
