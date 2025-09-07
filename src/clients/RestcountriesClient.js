@@ -24,11 +24,13 @@ export class RestcountriesClient {
     }
 
     async fetchCountryByCode(code) {
+        const codeParam = Array.isArray(code) ? code.join(',') : code;
+
         return axios({
             method: 'GET',
             url: `${process.env.RESTCOUNTRIES_URL}/alpha`,
             params: {
-                codes: code,
+                codes: codeParam,
                 fields: 'name,translations,capital,currencies,maps,population,flags,ccn3,region,subregion'
             } 
         });
