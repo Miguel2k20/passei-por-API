@@ -14,7 +14,7 @@ export class UpdateCountryVisitedController {
             }
 
             const db = await openDb();
-            db.run('UPDATE countries_visited SET notes = ? WHERE id = ?', [notes, id]);
+            await db.run('UPDATE countries_visited SET notes = ? WHERE id = ?', [notes, id]);
             
             res.json({
                 status: 200,

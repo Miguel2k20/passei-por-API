@@ -7,13 +7,11 @@ export class GetCountriesControllers {
         try {
             const { country }  = req.query;
             if(!country) {
-                return res.status(400).json({
-                    message: "Bad request. 'country' is required.",
-                    status: 400
-                });
+                const response = await client.fetchAllCountries()
+                res.json(response.data);
             }
             const response = await client.fetchCountryByName(country)
-            res.json(response.data[0]);
+            res.json(response.data);
         } catch (error) {
             res.status(500).json({
                 message: "Internal server error",

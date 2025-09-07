@@ -6,7 +6,18 @@ export class RestcountriesClient {
             method: 'GET',
             url: `${process.env.RESTCOUNTRIES_URL}/translation/${name.toLowerCase()}`,
             params: {
-                fields: 'name,capital,currencies,languages,maps,population,flags,ccn3,region,subregion'
+                fields: 'name,translations,capital,currencies,maps,population,flags,ccn3,region,subregion'
+            } 
+        });
+        
+    }
+
+    async fetchAllCountries() {
+        return axios({
+            method: 'GET',
+            url: `${process.env.RESTCOUNTRIES_URL}/all`,
+            params: {
+                fields: 'name,translations,capital,currencies,maps,population,flags,ccn3,region,subregion'
             } 
         });
         
@@ -18,7 +29,7 @@ export class RestcountriesClient {
             url: `${process.env.RESTCOUNTRIES_URL}/alpha`,
             params: {
                 codes: code,
-                fields: 'name,capital,currencies,languages,maps,population,flags,ccn3,region,subregion'
+                fields: 'name,translations,capital,currencies,maps,population,flags,ccn3,region,subregion'
             } 
         });
         

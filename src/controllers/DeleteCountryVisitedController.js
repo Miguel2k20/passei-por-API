@@ -6,7 +6,7 @@ export class DeleteCountryVisitedController {
             const { id } = req.params; 
 
             const db = await openDb();
-            db.run('DELETE FROM countries_visited WHERE id = ?', [id]);
+            await db.run('DELETE FROM countries_visited WHERE id = ?', [id]);
 
             res.json({
                 status: 200,

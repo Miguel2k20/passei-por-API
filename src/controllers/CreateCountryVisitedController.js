@@ -13,7 +13,11 @@ export class CreateCountryVisitedController {
             }
 
             const db = await openDb();
-            db.run('INSERT INTO countries_visited (notes, ccn3) VALUES (?, ?)', [notes, ccn3]);
+            const verify = await db.get('SELECT * FROM countries_visited WHERE ccn3 = ?', [ccn3])
+
+            if(!verify) {
+                await db.run('INSERT INTO countries_visited (notes, ccn3) VALUES (?, ?)', [notes, ccn3]);
+            }
             
             res.json({
                 status: 200,
