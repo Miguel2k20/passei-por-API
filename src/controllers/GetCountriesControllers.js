@@ -12,8 +12,8 @@ export class GetCountriesControllers {
                     status: 400
                 });
             }
-            const response = await client.fetchCountry(country)
-            res.json(response.data);
+            const response = await client.fetchCountryByName(country)
+            res.json(response.data[0]);
         } catch (error) {
             res.status(500).json({
                 message: "Internal server error",
